@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x:hidden;
+}
+// varaibles
+$black:rgb(0, 0, 0);
+$blue:blue;
+$plane:#e6dace;
+$plane1:#f1e9e0;
+
+
+
+.square{
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color:$blue;
+
+    display: inline-block;
+}
+.navbar{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.navbar-nav {   
+    margin-left: auto;
+}
+.nav-item{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color:$black;
+    font-weight: 500;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color:$blue;
+}
+.name{
+    color:$black;
+    font-weight: 700;
+}
+// header part css
+.hello{
+    font-weight: 700;
+}
+.here{
+    font-weight: 700;
+}
+.planecolor{
+    background-color:$plane ;
+   height: 80vh;    
+    width: 100%;
+}
+.women{
+    border-radius: 100px;
+    width: 17vh;
+    height: 17vh;
+    margin: auto;
+}
+.whole{
+    position: relative;
+}
+.hye{
+ 
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+.resume{
+    border-radius: 2rem;
+    background-color: $blue;
+    color:white;
+   
+    padding: 0rem 1.5rem 0rem 1.5rem;
+}
+.project{
+    border-radius: 2rem;
+   border:1px solid $black;
+
+   padding: 0rem 1.5rem 0rem 1.5rem;
+
+}
+.hye p{
+    font-weight: 400;
+    padding-top: 1rem;
+    color:black;
+}
+.leftside{
+    position: relative;
+}
+.card{
+    position: absolute;
+    top:50%;
+    left:100%;
+    transform: translate(-50%,-50%);
+//   height: 55vh;
+    border-radius: 0px;
+    background-color: $plane1;
+    border: none;
+    padding: 3rem 0 0rem 0;
+
+    // box-shadow: -6px 2px 2px 2px rgb(156, 156, 156);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19);
+}
+.card-title {
+    text-align: center;
+font-weight: 600;
+position: relative;
+}
+.card-title::after{
+    background: $black none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 50%;
+    top:130%;
+
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+    margin-top: 10px;
+    border-radius: 20px;
+
+}
+.card-text{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3rem;
+}
+.card-footer{
+    background-color: white;
+
+}
+.icon{
+    text-align: center;
+}
+.icon .fa-brands{
+    margin: 0.5rem;
+   
+}
+// footer css
+.footer{
+    padding: 0.6rem;
+}
+.fi{
+    margin: 0.3rem;
+}
+.detailgroup{
+    display: flex;
+}
+.call{
+margin-left: 4rem;
+text-align: center;
+}
+.copyright{
+    margin-left: 2rem;
+    text-align: left;
+}
+// media quiries=======================================
+@media (max-width: 576px) { 
+    .card{
+        position: absolute;
+    top: 50%;
+    left: 50%;
+        
+    }
+    .hye{
+        position: inherit;
+        padding: 1rem;
+    }
+    .call{
+        margin-left: 1rem;
+    }
+    .detailgroup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .copyright{
+        text-align: center;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) { 
+    .card{
+        position: absolute;
+    top: 50%;
+    left: 50%;
+        
+    }
+    .hye{
+        position: inherit;
+        padding: 1rem;
+    }
+    .call{
+        margin-left: 1rem;
+    }
+    .detailgroup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .copyright{
+        text-align: center;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 769px) { 
+    .card{
+        position: absolute;
+    top: 50%;
+    left: 100%;
+        
+    }
+    .hye{
+        position: inherit;
+      
+        width: 60%;
+     margin-left: 5rem;
+    
+    }
+    .call{
+        margin-left: 1rem;
+    }
+    .detailgroup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    // .copyright{
+    //     text-align: center;
+    // }
+
+ }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
